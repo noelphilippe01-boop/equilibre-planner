@@ -11,6 +11,8 @@
     "start": "electron .",
     "electron:dev": "node scripts/copy-preload.cjs && concurrently \"vite\" \"tsc -p tsconfig.electron.json -w\" \"wait-on http://localhost:5173 && electron .\"",
     "import:season-pdf": "node scripts/import-season-pdf.mjs",
+    "lint": "tsc --noEmit && tsc -p tsconfig.electron.json",
+    "format": "npm run lint",
     "postinstall": "node scripts/install-electron.cjs"
   },
   "dependencies": {
