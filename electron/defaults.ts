@@ -1,5 +1,7 @@
 import type { AppData } from '../src/types/index.js'
 
+import { createDefaultGuestCounts } from '../src/lib/guestCounts.js'
+
 export const defaultAppData: AppData = {
   profile: {
     name: '',
@@ -15,6 +17,7 @@ export const defaultAppData: AppData = {
       lunch: [],
       dinner: [],
     },
+    fullMealType: 'dinner',
     goals: [],
     notes: '',
   },
@@ -24,17 +27,10 @@ export const defaultAppData: AppData = {
   checkIns: [],
   settings: {
     ollamaUrl: 'http://localhost:11434',
-    ollamaModel: 'llama3.2:1b',
+    ollamaModel: 'llama3.2',
+    ollamaVisionModel: 'llama3.2-vision',
     weekStartDay: 'Lundi',
     weekEndDay: 'Dimanche',
   },
-  menuGuestCounts: {
-    Lundi: 1,
-    Mardi: 1,
-    Mercredi: 1,
-    Jeudi: 1,
-    Vendredi: 1,
-    Samedi: 1,
-    Dimanche: 1,
-  },
+  menuGuestCounts: createDefaultGuestCounts(),
 }

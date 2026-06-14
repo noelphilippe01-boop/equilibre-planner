@@ -1,25 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useAppData } from '../hooks/useAppData'
 import { getEquilibre } from '../lib/equilibre'
+import { filterVisionModels } from '../lib/ollamaModels'
 import { getPlanningWeekLabel } from '../lib/week'
 import type { AppSettings } from '../types'
 import { DAYS, defaultSettings } from '../types'
 
+function normalizeSettings(value?: Partial<AppSettings>): AppSettings {
+  return { ...defaultSettings, ...value }
+}
+
 export default function Settings() {
   const { data, update, loading } = useAppData()
-  const [settings, setSettings] = useState<AppSettings>(data.settings)
+  const [settings, setSettings] = useState<AppSettings>(() => normalizeSettings(data.settings))
   const [saved, setSaved] = useState(false)
   const [models, setModels] = useState<string[]>([])
   const [status, setStatus] = useState<string | null>(null)
   const [checking, setChecking] = useState(false)
 
   useEffect(() => {
-    if (!loading) setSettings({ ...defaultSettings, ...data.settings })
+    if (!loading) setSettings(normalizeSettings(data.settings))
   }, [data.settings, loading])
 
-  if (loading) return <div className="loading">Chargement...</div>
-
-  const refreshModels = async () => {
+  const refreshModels = useCallback(async () => {
     setChecking(true)
     setStatus(null)
     try {
@@ -32,13 +35,15 @@ export default function Settings() {
     } finally {
       setChecking(false)
     }
-  }
+  }, [settings.ollamaUrl])
 
-  const handleSave = async () => {
+  const handleSave = useCallback(async () => {
     await update({ settings })
     setSaved(true)
     setTimeout(() => setSaved(false), 2000)
-  }
+  }, [settings, update])
+
+  if (loading) return <div className="loading">Chargement...</div>
 
   return (
     <>
@@ -65,7 +70,7 @@ export default function Settings() {
           </label>
 
           <label>
-            Modele
+            Modele (menus & activites)
             <input
               list="ollama-models"
               value={settings.ollamaModel}
@@ -78,18 +83,41 @@ export default function Settings() {
               ))}
             </datalist>
           </label>
+
+          <label>
+            Modele vision (import image / OCR)
+            <input
+              list="ollama-vision-models"
+              value={settings.ollamaVisionModel ?? defaultSettings.ollamaVisionModel}
+              onChange={(e) => setSettings({ ...settings, ollamaVisionModel: e.target.value })}
+              placeholder="llama3.2-vision"
+            />
+            <datalist id="ollama-vision-models">
+              {filterVisionModels(models).map((model) => (
+                <option key={model} value={model} />
+              ))}
+            </datalist>
+            <span className="field-hint">
+              Pour captures, scans et notes manuscrites. Installez :{' '}
+              <code>ollama pull llama3.2-vision</code> ou <code>ollama pull moondream</code>
+            </span>
+          </label>
         </div>
 
         <div style={{ marginTop: 16, display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
-          <button className="btn btn-secondary" onClick={refreshModels} disabled={checking}>
+          <button className="btn btn-secondary" type="button" onClick={refreshModels} disabled={checking}>
             {checking ? 'Verification...' : 'Verifier la connexion'}
           </button>
-          <button className="btn btn-primary" onClick={handleSave}>
+          <button className="btn btn-primary" type="button" onClick={handleSave}>
             Enregistrer
           </button>
           {saved && <span style={{ color: 'var(--accent)' }}>Parametres enregistres</span>}
         </div>
-        {status && <p style={{ marginTop: 12, color: status.includes('detecte') ? 'var(--accent)' : 'var(--danger)' }}>{status}</p>}
+        {status && (
+          <p style={{ marginTop: 12, color: status.includes('detecte') ? 'var(--accent)' : 'var(--danger)' }}>
+            {status}
+          </p>
+        )}
       </div>
 
       <div className="card" style={{ marginTop: 16 }}>
@@ -98,43 +126,41 @@ export default function Settings() {
           Definit la semaine cible pour les menus et les activites (semaine suivante).
         </p>
 
-        <div className="form-grid" style={{ marginTop: 16 }}>
-          <div className="grid grid-2">
-            <label>
-              Jour de debut de semaine
-              <select
-                value={settings.weekStartDay}
-                onChange={(e) => setSettings({ ...settings, weekStartDay: e.target.value })}
-              >
-                {DAYS.map((day) => (
-                  <option key={day} value={day}>
-                    {day}
-                  </option>
-                ))}
-              </select>
-            </label>
+        <div className="grid grid-2" style={{ marginTop: 16 }}>
+          <label>
+            Jour de debut de semaine
+            <select
+              value={settings.weekStartDay}
+              onChange={(e) => setSettings({ ...settings, weekStartDay: e.target.value })}
+            >
+              {DAYS.map((day) => (
+                <option key={day} value={day}>
+                  {day}
+                </option>
+              ))}
+            </select>
+          </label>
 
-            <label>
-              Jour de fin de semaine
-              <select
-                value={settings.weekEndDay}
-                onChange={(e) => setSettings({ ...settings, weekEndDay: e.target.value })}
-              >
-                {DAYS.map((day) => (
-                  <option key={day} value={day}>
-                    {day}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
-
-          <p className="field-hint">
-            Prochaine semaine planifiee : {getPlanningWeekLabel(settings)}
-          </p>
+          <label>
+            Jour de fin de semaine
+            <select
+              value={settings.weekEndDay}
+              onChange={(e) => setSettings({ ...settings, weekEndDay: e.target.value })}
+            >
+              {DAYS.map((day) => (
+                <option key={day} value={day}>
+                  {day}
+                </option>
+              ))}
+            </select>
+          </label>
         </div>
 
-        <button className="btn btn-primary" style={{ marginTop: 16 }} onClick={handleSave}>
+        <p className="field-hint" style={{ marginTop: 12 }}>
+          Prochaine semaine planifiee : {getPlanningWeekLabel(settings)}
+        </p>
+
+        <button className="btn btn-primary" type="button" style={{ marginTop: 16 }} onClick={handleSave}>
           Enregistrer
         </button>
         {saved && <span style={{ marginLeft: 12, color: 'var(--accent)' }}>Parametres enregistres</span>}
@@ -143,21 +169,32 @@ export default function Settings() {
       <div className="card" style={{ marginTop: 16 }}>
         <h2>Installation Ollama</h2>
         <ol>
-          <li>Telechargez Ollama sur <a href="https://ollama.com/download" target="_blank" rel="noreferrer">ollama.com/download</a>.</li>
+          <li>
+            Telechargez Ollama sur{' '}
+            <a href="https://ollama.com/download" target="_blank" rel="noreferrer">
+              ollama.com/download
+            </a>
+            .
+          </li>
           <li>Installez et lancez l&apos;application Ollama (elle tourne en arriere-plan).</li>
-          <li>Dans un terminal, telechargez un modele : <code>ollama pull llama3.2</code></li>
-          <li>Cliquez sur <strong>Verifier la connexion</strong> ci-dessus, puis enregistrez.</li>
+          <li>
+            Dans un terminal, telechargez un modele : <code>ollama pull llama3.2</code>
+          </li>
+          <li>
+            Cliquez sur <strong>Verifier la connexion</strong> ci-dessus, puis enregistrez.
+          </li>
         </ol>
         <p style={{ color: 'var(--muted)' }}>
-          Modeles conseilles : <code>llama3.2</code>, <code>mistral</code>, <code>gemma2</code> (environ 2 a 5 Go chacun).
+          Modeles conseilles : <code>llama3.2</code>, <code>mistral</code>, <code>gemma2</code> (environ 2 a 5 Go
+          chacun).
         </p>
       </div>
 
       <div className="card" style={{ marginTop: 16 }}>
         <h2>Donnees locales</h2>
         <p>
-          Vos profils, menus, recettes et suivis sont enregistres dans le dossier utilisateur Electron
-          de l&apos;application (fichier <code>equilibre-data.json</code>).
+          Vos profils, menus, recettes et suivis sont enregistres dans le dossier utilisateur Electron de
+          l&apos;application (fichier <code>equilibre-data.json</code>).
         </p>
       </div>
     </>

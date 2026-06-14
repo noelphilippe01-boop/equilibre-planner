@@ -10,5 +10,5 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "include": ["electron", "src/types"]
+    "include": ["electron", "src/types", "src/lib/recipeLibrary.ts", "src/lib/recipeFormat.ts", "src/lib/menuStructure.ts", "src/lib/lightMealRecipes.ts", "src/lib/guestCounts.ts"]
 }

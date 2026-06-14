@@ -1,0 +1,2140 @@
+{
+  "source": "calendrier_saison_fr_def_part_fr.pdf",
+  "region": "Belgique et regions limitrophes",
+  "importedAt": "2026-06-14T18:28:07.759Z",
+  "items": [
+    {
+      "id": "artichaut",
+      "name": "Artichaut",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "asperge",
+      "name": "Asperge",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "aubergine",
+      "name": "Aubergine",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "bette",
+      "name": "Bette",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "betterave rouge",
+      "name": "Betterave rouge",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "brocoli",
+      "name": "Brocoli",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "carotte",
+      "name": "Carotte",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "cassis",
+      "name": "Cassis",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "celeri branche",
+      "name": "Céleri branche",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "celeri rave",
+      "name": "Céleri rave",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "cerfeuil",
+      "name": "Cerfeuil",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "cerise",
+      "name": "Cerise",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "champignon",
+      "name": "Champignon",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chataigne",
+      "name": "Chataîgne",
+      "kind": "fruit",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chauffees.",
+      "name": "Chauffées.",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chicon",
+      "name": "Chicon",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chicoree",
+      "name": "Chicorée",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chou blanc",
+      "name": "Chou blanc",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "chou chinois",
+      "name": "Chou chinois",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chou de bruxelles",
+      "name": "Chou de bruxelles",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chou fleur",
+      "name": "Chou fleur",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chou frise",
+      "name": "Chou frisé",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "chou rave",
+      "name": "Chou rave",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "chou rouge",
+      "name": "Chou rouge",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "chou vert",
+      "name": "Chou vert",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "coing",
+      "name": "Coing",
+      "kind": "fruit",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "concombre",
+      "name": "Concombre",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "courgette",
+      "name": "Courgette",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "cresson",
+      "name": "Cresson",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "epinard",
+      "name": "Epinard",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "ete",
+      "name": "Été",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "fenouil",
+      "name": "Fenouil",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "fraise",
+      "name": "Fraise",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "framboise",
+      "name": "Framboise",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "germes de soja",
+      "name": "Germes de soja",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "griotte",
+      "name": "Griotte",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "groseille",
+      "name": "Groseille",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "haricot",
+      "name": "Haricot",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "mache",
+      "name": "Mâche",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "mais",
+      "name": "Maïs",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "mirabelle",
+      "name": "Mirabelle",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "mure",
+      "name": "Mûre",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "myrtille",
+      "name": "Myrtille",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "navet",
+      "name": "Navet",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "noisette",
+      "name": "Noisette",
+      "kind": "fruit",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "4": [
+          "conservation"
+        ],
+        "5": [
+          "conservation"
+        ],
+        "6": [
+          "conservation"
+        ],
+        "7": [
+          "conservation"
+        ],
+        "8": [
+          "conservation"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "noix",
+      "name": "Noix",
+      "kind": "fruit",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "4": [
+          "conservation"
+        ],
+        "5": [
+          "conservation"
+        ],
+        "6": [
+          "conservation"
+        ],
+        "7": [
+          "conservation"
+        ],
+        "8": [
+          "conservation"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "oignon",
+      "name": "Oignon",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "10": [
+          "conservation"
+        ],
+        "11": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "panais",
+      "name": "Panais",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "petit pois",
+      "name": "Petit pois",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "pleurote",
+      "name": "Pleurote",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "poire",
+      "name": "Poire",
+      "kind": "fruit",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "poireau",
+      "name": "Poireau",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "poivron",
+      "name": "Poivron",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "pomme",
+      "name": "Pomme",
+      "kind": "fruit",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "pomme de terre",
+      "name": "Pomme de terre",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "4": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "pot ou la surgelation.",
+      "name": "Pot ou la surgélation.",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "potimarron",
+      "name": "Potimarron",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "potiron",
+      "name": "Potiron",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "conservation"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "pourpier",
+      "name": "Pourpier",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "prune",
+      "name": "Prune",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "radis noir",
+      "name": "Radis noir",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "radis rose",
+      "name": "Radis rose",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "raisin",
+      "name": "Raisin",
+      "kind": "fruit",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "rhubarbe",
+      "name": "Rhubarbe",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "rutabaga",
+      "name": "Rutabaga",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "conservation"
+        ],
+        "2": [
+          "conservation"
+        ],
+        "3": [
+          "conservation"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "conservation"
+        ]
+      }
+    },
+    {
+      "id": "saison",
+      "name": "Saison",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "saison automne",
+      "name": "Saison automne",
+      "kind": "legume",
+      "months": {
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "saison hiver",
+      "name": "Saison hiver",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "saison printemps",
+      "name": "Saison printemps",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "salade",
+      "name": "Salade",
+      "kind": "legume",
+      "months": {
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "salsifis",
+      "name": "Salsifis",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "scorsonere",
+      "name": "Scorsonère",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "tetragone",
+      "name": "Tétragone",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "tomate",
+      "name": "Tomate",
+      "kind": "legume",
+      "months": {
+        "6": [
+          "fresh"
+        ],
+        "7": [
+          "fresh"
+        ],
+        "8": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ]
+      }
+    },
+    {
+      "id": "topinambour",
+      "name": "Topinambour",
+      "kind": "legume",
+      "months": {
+        "1": [
+          "fresh"
+        ],
+        "2": [
+          "fresh"
+        ],
+        "3": [
+          "fresh"
+        ],
+        "4": [
+          "fresh"
+        ],
+        "5": [
+          "fresh"
+        ],
+        "9": [
+          "fresh"
+        ],
+        "10": [
+          "fresh"
+        ],
+        "11": [
+          "fresh"
+        ],
+        "12": [
+          "fresh"
+        ]
+      }
+    }
+  ]
+}

@@ -2,15 +2,18 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import { isElectronApp } from './lib/equilibre'
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
+import Recipes from './pages/Recipes'
 import Menus from './pages/Menus'
 import Shopping from './pages/Shopping'
 import Activities from './pages/Activities'
 import CheckInPage from './pages/CheckInPage'
 import Settings from './pages/Settings'
+import RouteErrorBoundary from './components/RouteErrorBoundary'
 
 const nav = [
   { to: '/', label: 'Accueil' },
   { to: '/profil', label: 'Profil sante' },
+  { to: '/recettes', label: 'Recettes' },
   { to: '/menus', label: 'Menus' },
   { to: '/courses', label: 'Courses' },
   { to: '/activites', label: 'Activites' },
@@ -47,15 +50,18 @@ export default function App() {
             </p>
           </div>
         )}
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/profil" element={<Profile />} />
-          <Route path="/menus" element={<Menus />} />
-          <Route path="/courses" element={<Shopping />} />
-          <Route path="/activites" element={<Activities />} />
-          <Route path="/suivi" element={<CheckInPage />} />
-          <Route path="/parametres" element={<Settings />} />
-        </Routes>
+        <RouteErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/profil" element={<Profile />} />
+            <Route path="/recettes" element={<Recipes />} />
+            <Route path="/menus" element={<Menus />} />
+            <Route path="/courses" element={<Shopping />} />
+            <Route path="/activites" element={<Activities />} />
+            <Route path="/suivi" element={<CheckInPage />} />
+            <Route path="/parametres" element={<Settings />} />
+          </Routes>
+        </RouteErrorBoundary>
       </main>
     </div>
   )

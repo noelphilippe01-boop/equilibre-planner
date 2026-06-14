@@ -14,6 +14,8 @@ export interface HealthProfile {
   allergies: string[]
   dietaryPreferences: string[]
   mealPreferences: MealPreferences
+  /** Repas principal quotidien (recette complete de la bibliotheque). */
+  fullMealType?: 'lunch' | 'dinner'
   goals: string[]
   notes: string
 }
@@ -24,15 +26,23 @@ export interface Ingredient {
   unit: string
 }
 
+export type RecipeMealType = MealSlot['mealType']
+
 export interface Recipe {
   id: string
   name: string
   servings: number
   prepMinutes: number
-  batchCookingNotes: string
   ingredients: Ingredient[]
   steps: string[]
   tags: string[]
+  /** Origine : livre, site, perso… */
+  source?: string
+  sourceUrl?: string
+  /** Repas compatibles (ex. breakfast pour tartines) */
+  mealTypes?: RecipeMealType[]
+  /** Saisons : printemps, ete, automne, hiver */
+  seasons?: string[]
 }
 
 export interface MealSlot {
@@ -40,15 +50,24 @@ export interface MealSlot {
   mealType: 'breakfast' | 'lunch' | 'dinner' | 'snack'
   recipeId: string
   recipeName: string
-  isBatchCooking: boolean
+  /** Repas leger sans recette bibliotheque (tartines, salade, soupe…). */
+  isLightMeal?: boolean
 }
+
+export interface DayMealGuestCounts {
+  breakfast: number
+  lunch: number
+  dinner: number
+}
+
+export type WeekGuestCounts = Record<string, DayMealGuestCounts>
 
 export interface WeeklyMenu {
   id: string
   weekStart: string
   season: string
   meals: MealSlot[]
-  guestsByDay: Record<string, number>
+  guestsByDay: WeekGuestCounts
   createdAt: string
 }
 
@@ -90,8 +109,12 @@ export interface CheckIn {
 export interface AppSettings {
   ollamaUrl: string
   ollamaModel: string
+  /** Modele Ollama avec vision (OCR, photos, notes manuscrites). */
+  ollamaVisionModel: string
   weekStartDay: string
   weekEndDay: string
+  /** Version interne — reinitialise la bibliotheque lors d'une montee de version. */
+  recipeLibraryVersion?: number
 }
 
 export interface AppData {
@@ -101,7 +124,7 @@ export interface AppData {
   activityPlans: WeeklyActivityPlan[]
   checkIns: CheckIn[]
   settings: AppSettings
-  menuGuestCounts: Record<string, number>
+  menuGuestCounts: WeekGuestCounts
 }
 
 export const defaultMealPreferences: MealPreferences = {
@@ -120,16 +143,20 @@ export const defaultProfile: HealthProfile = {
   allergies: [],
   dietaryPreferences: [],
   mealPreferences: defaultMealPreferences,
+  fullMealType: 'dinner',
   goals: [],
   notes: '',
 }
 
 export const defaultSettings: AppSettings = {
   ollamaUrl: 'http://localhost:11434',
-  ollamaModel: 'llama3.2:1b',
+  ollamaModel: 'llama3.2',
+  ollamaVisionModel: 'llama3.2-vision',
   weekStartDay: 'Lundi',
   weekEndDay: 'Dimanche',
 }
+
+export const DAYS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
 
 export const defaultAppData: AppData = {
   profile: defaultProfile,
@@ -138,15 +165,9 @@ export const defaultAppData: AppData = {
   activityPlans: [],
   checkIns: [],
   settings: defaultSettings,
-  menuGuestCounts: {
-    Lundi: 1,
-    Mardi: 1,
-    Mercredi: 1,
-    Jeudi: 1,
-    Vendredi: 1,
-    Samedi: 1,
-    Dimanche: 1,
-  },
+  menuGuestCounts: Object.fromEntries(
+    DAYS.map((day) => [day, { breakfast: 1, lunch: 1, dinner: 1 }]),
+  ) as WeekGuestCounts,
 }
 
 export function getCurrentSeason(): string {
@@ -156,8 +177,6 @@ export function getCurrentSeason(): string {
   if (month >= 9 && month <= 11) return 'automne'
   return 'hiver'
 }
-
-export const DAYS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
 
 export const MEAL_LABELS: Record<MealSlot['mealType'], string> = {
   breakfast: 'Petit-dejeuner',

@@ -13,6 +13,7 @@ function mergeProfile(profile: HealthProfile): HealthProfile {
       ...defaultMealPreferences,
       ...profile.mealPreferences,
     },
+    fullMealType: profile.fullMealType ?? defaultProfile.fullMealType,
   }
 }
 
@@ -127,8 +128,30 @@ export default function Profile() {
           />
 
           <div className="meal-preferences-section">
-            <h2>Preferences par repas</h2>
-            <p className="field-hint">Guide la generation des menus (petit-dejeuner, dejeuner, diner).</p>
+            <h2>Structure du menu</h2>
+            <p className="field-hint">
+              1 recette complete par jour depuis la bibliotheque. Petit-dejeuner et l&apos;autre repas
+              sont legers (tartines, salade, soupe…).
+            </p>
+
+            <label>
+              Repas complet de la journee
+              <select
+                value={profile.fullMealType ?? 'dinner'}
+                onChange={(e) =>
+                  setProfile({
+                    ...profile,
+                    fullMealType: e.target.value as HealthProfile['fullMealType'],
+                  })
+                }
+              >
+                <option value="lunch">Dejeuner</option>
+                <option value="dinner">Diner</option>
+              </select>
+            </label>
+
+            <h2 style={{ marginTop: 20 }}>Preferences par repas</h2>
+            <p className="field-hint">Guide les repas legers (petit-dejeuner et repas non complet).</p>
 
             <ItemListField
               label="Petit-dejeuner"

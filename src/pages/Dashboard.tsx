@@ -3,6 +3,7 @@ import { useAppData } from '../hooks/useAppData'
 import { profileSummary } from '../lib/ai'
 import { getCurrentMenu } from '../lib/shopping'
 import { getCurrentSeason } from '../types'
+import { summarizeProduceForMonth } from '../lib/seasonCalendar'
 import { getPlanningWeekStart } from '../lib/week'
 
 export default function Dashboard() {
@@ -11,6 +12,7 @@ export default function Dashboard() {
   const menu = getCurrentMenu(data, weekStart)
   const plan = data.activityPlans.find((p) => p.weekStart === weekStart)
   const lastCheckIn = data.checkIns.at(-1)
+  const produce = summarizeProduceForMonth()
 
   if (loading) return <div className="loading">Chargement...</div>
 
@@ -18,7 +20,9 @@ export default function Dashboard() {
     <>
       <header className="page-header">
         <h1>Tableau de bord</h1>
-        <p>{profileSummary(data.profile)} · Saison : {getCurrentSeason()}</p>
+        <p>
+          {profileSummary(data.profile)} · Saison : {getCurrentSeason()} · {produce.monthName}
+        </p>
       </header>
 
       <div className="grid grid-3">
@@ -58,6 +62,34 @@ export default function Dashboard() {
             Ajouter un suivi
           </Link>
         </div>
+      </div>
+
+      <div className="card" style={{ marginTop: 16 }}>
+        <h2>Produits de saison — {produce.monthName}</h2>
+        <p className="field-hint">
+          Calendrier belge ({produce.freshCount} frais, {produce.conservationCount} en conservation)
+        </p>
+        <div className="grid grid-2" style={{ marginTop: 12 }}>
+          <div>
+            <h3>Fruits frais</h3>
+            <p>{produce.fresh.fruits.length ? produce.fresh.fruits.join(', ') : 'Aucun ce mois-ci'}</p>
+          </div>
+          <div>
+            <h3>Legumes frais</h3>
+            <p>{produce.fresh.legumes.length ? produce.fresh.legumes.join(', ') : 'Aucun ce mois-ci'}</p>
+          </div>
+        </div>
+        {(produce.conservation.fruits.length > 0 || produce.conservation.legumes.length > 0) && (
+          <details style={{ marginTop: 12 }}>
+            <summary>Conservation ({produce.conservationCount})</summary>
+            <p style={{ marginTop: 8 }}>
+              {[
+                ...produce.conservation.fruits,
+                ...produce.conservation.legumes,
+              ].join(', ')}
+            </p>
+          </details>
+        )}
       </div>
 
       <div className="card" style={{ marginTop: 16 }}>

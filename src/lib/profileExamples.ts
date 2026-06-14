@@ -20,7 +20,6 @@ export const PROFILE_EXAMPLES = {
     'Peu de viande rouge',
     'Sans porc',
     'Produits locaux et de saison',
-    'Batch cooking le dimanche',
     'Peu de sucre ajoute',
   ],
   goals: [
@@ -45,7 +44,6 @@ export const PROFILE_EXAMPLES = {
     'Soupes',
     'Plat unique',
     'Sandwich',
-    'Batch cooking',
     'Rien / tres leger',
   ],
   dinner: [

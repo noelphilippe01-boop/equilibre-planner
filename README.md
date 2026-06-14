@@ -1,11 +1,11 @@
 # Equilibre Planner
 
-Application de bureau Windows pour planifier des **menus equilibres** (batch cooking, saison) et un **planning d'activites physiques** adaptatif, en fonction de votre profil sante et de votre ressenti regulier.
+Application de bureau Windows pour planifier des **menus equilibres** (saison, repas legers) et un **planning d'activites physiques** adaptatif, en fonction de votre profil sante et de votre ressenti regulier.
 
 ## Fonctionnalites
 
 - **Profil sante** : age, poids, allergies, conditions, objectifs
-- **Menus hebdomadaires** : recettes, batch cooking, produits de saison (via IA locale)
+- **Menus hebdomadaires** : recettes, produits de saison (via IA locale)
 - **Liste de courses** : generee automatiquement depuis le menu
 - **Planning d'activites** : seances adaptees a votre etat de sante
 - **Suivi regulier** : energie, humeur, sommeil, douleur, notes
